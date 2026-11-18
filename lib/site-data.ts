@@ -94,7 +94,295 @@ export const site = {
   contact,
   contactLinks: [
     { label: "WhatsApp", href: contact.whatsapp },
-      ],
+    { label: "Instagram", href: contact.instagram },
+    { label: "Facebook", href: contact.facebook },
+    { label: "Email", href: `mailto:${contact.email}` },
+  ],
+  location: {
+    area: "Sitio Sawang, Brgy. Tubod, San Juan, Siquijor",
+    province: "Siquijor, Philippines",
+    note: "Exact dive sites depend on conditions for the day.",
+  },
+  trustPoints: [
+    "Calm, unhurried sessions.",
+    "Planned around actual sea conditions and diver level.",
+    "Sessions suitable for first-timers, returning divers, and progressing students.",
+    "Progression not rushed but kept steady.",
+  ],
+};
+
+export const faqs = [
+  {
+    question: "Do I need experience to join?",
+    answer:
+      "No. Intro sessions are designed for first-timers, while training and guided dives are for divers with prior experience.",
+  },
+  {
+    question: "How do you choose dive sites?",
+    answer:
+      "Sites are selected based on conditions, safety, visibility, currents, and the diver's level.",
+  },
+  {
+    question: "How do I book?",
+    answer:
+      "Send a message through WhatsApp, Instagram, Facebook, or email to confirm availability and session details.",
+  },
+];
+
+export const services: ServiceSummary[] = [
+  {
+    slug: "intro-to-freediving",
+    title: "Introduction to Freediving",
+    shortTitle: "Intro to Freediving",
+    summary:
+      "A one-day first-timer experience covering essential theory, breathing practice, and a supervised open-water session.",
+    priceLabel: "₱2,500",
+    ctaLabel: "View Intro",
+    href: "/services/intro-to-freediving",
+    image: "/gallery/intro-1.JPG",
+    imageAlt: "Intro to freediving session in Siquijor",
+    gallery: [
+      "/images/intro/1.JPG",
+      "/images/intro/2.jpg",
+      "/images/intro/3.jpeg",
+    ],
+  },
+  {
+    slug: "fundive-with-guide",
+    title: "Siquijor Fundive with Guide",
+    shortTitle: "Fundive with Guide",
+    summary:
+      "Guided fundives for guests who already completed an intro class and want to explore up to two sites with local guidance.",
+    priceLabel: "₱1,500 / pax",
+    ctaLabel: "View Fundive",
+    href: "/services/fundive-with-guide",
+    image: "/gallery/fundive-1.JPG",
+    imageAlt: "Guided fundive in Siquijor",
+    gallery: [
+      "/images/fundive/1.JPG",
+      "/images/fundive/2.jpg",
+      "/images/fundive/3.jpg",
+      "/images/fundive/4.jpg",
+      "/images/fundive/5.jpg",
+      "/images/fundive/6.jpg",
+      "/images/fundive/7.jpg",
+      "/images/fundive/8.jpg",
+      "/images/fundive/9.jpg",
+      "/images/fundive/10.jpg",
+      "/images/fundive/11.JPG",
+      "/images/fundive/12.jpg",
+      "/images/fundive/13.jpg",
+      "/images/fundive/14.jpg",
+    ],
+  },
+  {
+    slug: "line-training",
+    title: "Line Training Package",
+    shortTitle: "Line Training",
+    summary:
+      "Technique-focused training with pre-dive planning, supervised line dives, and post-dive feedback for progressing divers.",
+    priceLabel: "₱1,500–₱2,500",
+    ctaLabel: "View Training",
+    href: "/services/line-training",
+    image: "/gallery/line-training-1.jpg",
+    imageAlt: "Freediving line training session",
+    gallery: [
+      "/images/linetraining/1.jpg",
+      "/images/linetraining/2.JPG",
+      "/images/linetraining/3.jpg",
+      "/images/linetraining/4.jpg",
+      "/images/linetraining/5.jpg",
+      "/images/linetraining/6.jpg",
+    ],
+  },
+  {
+    slug: "courses",
+    title: "Molchanovs Certification Courses",
+    shortTitle: "Courses",
+    summary:
+      "Structured Wave 1 - 3 training for divers building a safer foundation, better technique, and more depth comfort.",
+    priceLabel: "Wave 1 - 3",
+    ctaLabel: "View Courses",
+    href: "/services/courses",
+    image: "/gallery/intro-1.jpg",
+    imageAlt: "Freediving course session in Siquijor",
+    gallery: [],
+  },
+];
+
+export const courseCards: CourseCard[] = [
+  {
+    title: "Molchanovs Wave 1",
+    duration: "2–3 days",
+    price: "Contact for current rate",
+    summary:
+      "Entry-level certification focused on safety, equalization, open-water technique, and a stable foundation.",
+    prerequisites: [
+      "Comfortable in the water",
+      "Able to swim confidently",
+      "Suitable for beginners and early-stage divers",
+    ],
+    courseRequirements: [
+      "STA 1'30",
+      "DYNB 30m",
+      "CWTB & FIM 12 - 20m",
+      "CWTB Buddying 6 - 10m",
+      "CWTB Rescue 6 - 10m",
+    ],
+    highlights: [
+      "Breathing and relaxation basics",
+      "Equalization foundations",
+      "Static, dynamic, and depth sessions",
+      "Safety procedures and buddy work",
+    ],
+    note:
+      "Exact structure depends on conditions, student pace, and certification standards.",
+    gallery: [
+      "/images/courses/1.jpg",
+    ],
+  },
+  {
+    title: "Molchanovs Wave 2",
+    duration: "3-4 days",
+    price: "Contact for current rate",
+    summary:
+      "Intermediate freediving course for divers ready to refine technique, improve efficiency, and build deeper confidence.",
+    prerequisites: [
+      "Wave 1 or equivalent certification",
+      "Comfort with previous depth training",
+      "Good equalization control",
+    ],
+    courseRequirements: [
+      "STA 2'30",
+      "DYNB 50m",
+      "DNF 35m",
+      "CWTB & FIM 24 - 30m",
+      "CNF 15m",
+      "CWTB Buddying 10 - 15m",
+      "CWTB Rescue 10 - 15m",
+    ],
+    highlights: [
+      "Technique refinement",
+      "Rescue and safety progression",
+      "Depth-specific coaching",
+      "Structured performance feedback",
+      "Transition recreational divers into autonomous",
+    ],
+    note:
+      "Best suited to divers who already have a solid foundation and want guided progression.",
+    gallery: [
+       "/images/courses/2.jpg", 
+    ],
+  },
+  {
+    title: "Molchanovs Wave 3",
+    duration: "4-5 days",
+    price: "Contact for current rate",
+    summary:
+      "Advanced/Master freediving certification course covering advanced equalization, open-water techniques, and a resilient mental foundation.",
+    prerequisites: [
+      "Wave 2 or equivalent certification",
+      "Comfort with previous depth training",
+      "Good equalization control",
+    ],
+    courseRequirements: [
+      "STA 3'30",
+      "DYNB 75m",
+      "DNF 50m",
+      "CWTB & FIM 34 - 40m",
+      "CNF 25 - 30m",
+      "CWTB Buddying 20m",
+      "Rescue 20m + Surface Tow 20m",
+    ],
+    highlights: [
+      "Transitioning to deep Frenzel and mouthfill equalization, plus reverse packing",
+      "Attention deconcentration and relaxation techniques under performance pressure",
+      "Qualification to act as an assistant instructor for Wave 1 and Wave 2 courses",
+    ],
+    note:
+      "Best suited to divers who are eager to master recreational freediving training.",
+    gallery: [
+      "/images/courses/3.jpg",
+    ],
+  },
+];
+
+export const introDetails: IntroDetails = {
+  title: "Intro to Freediving",
+  duration: "Half day",
+  schedule: "8AM - 12NN | Weekdays and weekends - prior arrangement",
+  price: "₱2,500",
+  summary:
+    "A first-timer session focused on comfort in the water, basic theory, breathing, safety, and a supervised open-water experience.",
+  audience: [
+    "First-timers who want a proper introduction",
+    "Travelers curious about freediving in Siquijor",
+    "Beginners who prefer a calm, safety-first approach",
+  ],
+  inclusions: [
+    "Introductory theory session",
+    "Breathing and basic relaxation techniques",
+    "Open-water practice",
+    "Photos and videos when conditions allow",
+  ],
+  exclusions: [
+    "Environmental or cottage fees",
+    "Site-to-site transport",
+  ],
+  notes: [
+    "Session structure depends on sea conditions and student pace.",
+    "Message first to confirm schedule and inclusions.",
+  ],
+  gallery: [
+    "/images/intro/1.JPG",
+    "/images/intro/2.jpg",
+    "/images/intro/3.jpeg",
+  ],
+};
+
+export const fundiveDetails: FundiveDetails = {
+  title: "Siquijor Fundive with Guide",
+  price: "₱1,500 per person",
+  summary:
+    "A guided fundive session for divers with prior intro-level experience who want local support and condition-based site planning.",
+  schedule: "8:00 AM–12:00 NN or 1:00 PM–5:00 PM",
+  minRequirement: "Intro to Freediving or equivalent experience required",
+  inclusions: [
+    "Guided session with certified instructor",
+    "Up to two dive sites",
+    "Around one hour per site",
+    "Photos and videos",
+  ],
+  exclusions: [
+    "Environmental fees",
+    "Gear rental",
+    "Site-to-site transport",
+  ],
+  transportAddOns: [
+    "Solo motorbike transport: +₱700",
+    "Group easyride/cab transport: +₱2,500",
+  ],
+  notes: [
+    "Each session is planned based on actual conditions on the day.",
+    "Typical session windows are 8:00 AM–12:00 NN or 1:00 PM–5:00 PM.",
+    "Site choice depends on current, visibility, monsoon, tide, and traffic.",
+  ],
+  gallery: [
+    "/images/fundive/1.JPG",
+    "/images/fundive/2.jpg",
+    "/images/fundive/3.jpg",
+    "/images/fundive/4.jpg",
+    "/images/fundive/5.jpg",
+    "/images/fundive/6.jpg",
+    "/images/fundive/7.jpg",
+    "/images/fundive/8.jpg",
+    "/images/fundive/9.jpg",
+    "/images/fundive/10.jpg",
+    "/images/fundive/11.JPG",
+    "/images/fundive/12.jpg",
+    "/images/fundive/13.jpg",
+    "/images/fundive/14.jpg",
+  ],
 };
 
 export const lineTrainingDetails: LineTrainingDetails = {
@@ -213,4 +501,3 @@ export const team: TeamMember[] = [
     image: "/images/team/sul.jpg",
   },
 ];
-
