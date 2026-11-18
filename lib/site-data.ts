@@ -1,135 +1,100 @@
-
-    
-  
-      "DYNB 50m",
-      "DNF 35m",
-      "CWTB & FIM 24 - 30m",
-      "CNF 15m",
-      "CWTB Buddying 10 - 15m",
-      "CWTB Rescue 10 - 15m",
-    ],
-    highlights: [
-      "Technique refinement",
-      "Rescue and safety progression",
-      "Depth-specific coaching",
-      "Structured performance feedback",
-      "Transition recreational divers into autonomous",
-    ],
-    note:
-      "Best suited to divers who already have a solid foundation and want guided progression.",
-    gallery: [
-       "/images/courses/2.jpg", 
-    ],
-  },
-  {
-    title: "Molchanovs Wave 3",
-    duration: "4-5 days",
-    price: "Contact for current rate",
-    summary:
-      "Advanced/Master freediving certification course covering advanced equalization, open-water techniques, and a resilient mental foundation.",
-    prerequisites: [
-      "Wave 2 or equivalent certification",
-      "Comfort with previous depth training",
-      "Good equalization control",
-    ],
-    courseRequirements: [
-      "STA 3'30",
-      "DYNB 75m",
-      "DNF 50m",
-      "CWTB & FIM 34 - 40m",
-      "CNF 25 - 30m",
-      "CWTB Buddying 20m",
-      "Rescue 20m + Surface Tow 20m",
-    ],
-    highlights: [
-      "Transitioning to deep Frenzel and mouthfill equalization, plus reverse packing",
-      "Attention deconcentration and relaxation techniques under performance pressure",
-      "Qualification to act as an assistant instructor for Wave 1 and Wave 2 courses",
-    ],
-    note:
-      "Best suited to divers who are eager to master recreational freediving training.",
-    gallery: [
-      "/images/courses/3.jpg",
-    ],
-  },
-];
-
-export const introDetails: IntroDetails = {
-  title: "Intro to Freediving",
-  duration: "Half day",
-  schedule: "8AM - 12NN | Weekdays and weekends - prior arrangement",
-  price: "₱2,500",
-  summary:
-    "A first-timer session focused on comfort in the water, basic theory, breathing, safety, and a supervised open-water experience.",
-  audience: [
-    "First-timers who want a proper introduction",
-    "Travelers curious about freediving in Siquijor",
-    "Beginners who prefer a calm, safety-first approach",
-  ],
-  inclusions: [
-    "Introductory theory session",
-    "Breathing and basic relaxation techniques",
-    "Open-water practice",
-    "Photos and videos when conditions allow",
-  ],
-  exclusions: [
-    "Environmental or cottage fees",
-    "Site-to-site transport",
-  ],
-  notes: [
-    "Session structure depends on sea conditions and student pace.",
-    "Message first to confirm schedule and inclusions.",
-  ],
-  gallery: [
-    "/images/intro/1.JPG",
-    "/images/intro/2.jpg",
-    "/images/intro/3.jpeg",
-  ],
+export type ServiceSummary = {
+  slug: string;
+  title: string;
+  shortTitle: string;
+  summary: string;
+  priceLabel: string;
+  ctaLabel: string;
+  href: string;
+  image: string;
+  imageAlt: string;
+  gallery: string[];
 };
 
-export const fundiveDetails: FundiveDetails = {
-  title: "Siquijor Fundive with Guide",
-  price: "₱1,500 per person",
-  summary:
-    "A guided fundive session for divers with prior intro-level experience who want local support and condition-based site planning.",
-  schedule: "8:00 AM–12:00 NN or 1:00 PM–5:00 PM",
-  minRequirement: "Intro to Freediving or equivalent experience required",
-  inclusions: [
-    "Guided session with certified instructor",
-    "Up to two dive sites",
-    "Around one hour per site",
-    "Photos and videos",
-  ],
-  exclusions: [
-    "Environmental fees",
-    "Gear rental",
-    "Site-to-site transport",
-  ],
-  transportAddOns: [
-    "Solo motorbike transport: +₱700",
-    "Group easyride/cab transport: +₱2,500",
-  ],
-  notes: [
-    "Each session is planned based on actual conditions on the day.",
-    "Typical session windows are 8:00 AM–12:00 NN or 1:00 PM–5:00 PM.",
-    "Site choice depends on current, visibility, monsoon, tide, and traffic.",
-  ],
-  gallery: [
-    "/images/fundive/1.JPG",
-    "/images/fundive/2.jpg",
-    "/images/fundive/3.jpg",
-    "/images/fundive/4.jpg",
-    "/images/fundive/5.jpg",
-    "/images/fundive/6.jpg",
-    "/images/fundive/7.jpg",
-    "/images/fundive/8.jpg",
-    "/images/fundive/9.jpg",
-    "/images/fundive/10.jpg",
-    "/images/fundive/11.JPG",
-    "/images/fundive/12.jpg",
-    "/images/fundive/13.jpg",
-    "/images/fundive/14.jpg",
-  ],
+export type TeamMember = {
+  name: string;
+  role: string;
+  certification?: string;
+  bio: string;
+  image?: string;
+};
+
+export type CourseCard = {
+  title: string;
+  duration: string;
+  price: string;
+  summary: string;
+  prerequisites: string[];
+  courseRequirements: string[];
+  highlights: string[];
+  note?: string;
+  gallery: string[];
+};
+
+export type IntroDetails = {
+  title: string;
+  duration: string;
+  schedule: string;
+  price: string;
+  summary: string;
+  audience: string[];
+  inclusions: string[];
+  exclusions: string[];
+  notes: string[];
+  gallery: string[];
+};
+
+export type FundiveDetails = {
+  title: string;
+  price: string;
+  summary: string;
+  schedule: string;
+  minRequirement: string;
+  inclusions: string[];
+  exclusions: string[];
+  transportAddOns: string[];
+  notes: string[];
+  gallery: string[];
+};
+
+export type LineTrainingDetails = {
+  title: string;
+  price: string;
+  summary: string;
+  schedule: string;
+  minRequirement: string;
+  rates: string[];
+  inclusions: string[];
+  exclusions: string[];
+  notes: string[];
+  gallery: string[];
+};
+
+const contact = {
+  phone: "+63 906 629 3634",
+  email: "swakefreediver@gmail.com",
+  whatsapp: "https://api.whatsapp.com/send?phone=639066293634",
+  instagram: "https://www.instagram.com/direct/t/17842367781054987/",
+  facebook: "https://www.messenger.com/t/115348667850263",
+};
+
+const contactColors: Record<string, string> = {
+  WhatsApp: "text-[#25D366]",
+  Instagram: "text-[#E4405F]",
+  Facebook: "text-[#1877F2]",
+  Email: "text-slate-300",
+};
+
+export const site = {
+  name: "Swake Freedivers Siquijor",
+  description:
+    "Freediving in Siquijor for first-timers and experienced divers.",
+  legalName: "Swake Diving Center",
+  baseUrl: "https://swakefreedivers.com",
+  contact,
+  contactLinks: [
+    { label: "WhatsApp", href: contact.whatsapp },
+      ],
 };
 
 export const lineTrainingDetails: LineTrainingDetails = {
@@ -193,4 +158,59 @@ export const team: TeamMember[] = [
   },
   {
     name: "Bernard Serino",
+    role: "Co-founder/ Master Freediver",
+    certification: "Molchanovs W3",
+    bio: "--------",
+    image: "/images/team/bernard.jpg",
+  },
+  {
+    name: "Charisse Nicole Espinosa",
+    role: "Co-founder/ Admin Officer/ Accountant",
+    certification: " ",
+    bio: "Has an immense dedication in freediving activities and related field, works mainly accounting and financial sectors",
+    image: "/images/team/charisse.jpg",
+  },
+  {
+    name: "Rexon Bongat",
+    role: "Fundive Guide",
+    certification: "Molchanovs W2",
+    bio: "Began freediving in 2015 after joining as a guide at the sanctuary — about 10 years of diving experience. Serves as Swake's videographer, and his background as a fisherman gives him sharp instincts for reading currents and depth underwater. Dives with safety at the front of his mind, for himself and for guests.",
+    image: "/images/team/rexon.jpg",
+  },
+  {
+    name: "Jayson Abas",
+    role: "Fundive Guide/ SocMed Manager",
+    certification: "Molchanovs W2",
+    bio: "Started freediving in October 2023, talked into it by his friend Pipay for the self-challenge — 3 years in now. Handles marketing, line training, and fundive guiding. Outside diving: surfskating, coffee, Dota, and tour guiding at waterfalls and island tours. Always checks water conditions and temperature first to dial in camera settings for smoother edits. Describes the feeling underwater as being one with the sea creatures, respectfully.",
+    image: "/images/team/jayson.jpg",
+  },
+  {
+    name: "John Lloyd Payla",
+    role: "Fundive Guide",
+    certification: "Molchanovs W2",
+    bio: "Started out just tagging along on dives at Tulapos Marine Sanctuary — 4 years in now. Aalso guides at Tulapos Marine Sanctuary. Outside diving: basketball and frisbee.",
+    image: "/images/team/johnL.jpg",
+  },
+  {
+    name: "Soyinx Lazarte",
+    role: "Fundive Guide/ Club President/ Marketing",
+    certification: "Molchanovs W1",
+    bio: "Started freediving in 2021, during the pandemic, with Swake's OGs. Works in service to farmers and fishermen in San Juan outside diving. Known for patience, video, and reading sea conditions — believes freediving is rare and amazing, since only 1 in 1000 people do it.",
+    image: "/images/team/soysoy.jpg",
+  },
+  {
+    name: "Reyida Keith Ocao",
+    role: "Administrative Officer/ Finance",
+    certification: "Molchanovs W1",
+    bio: "Started freediving 2 years ago after encouragement from KC. Handles Swake's finance and dive/gear records, invoicing, and client payments; and enjoys pickleball and nature trips.  Patient, calm, and focused underwater, always chasing a bit more depth.",
+    image: "/images/team/reyida.jpg",
+  },
+  {
+    name: "Sul Dahunan",
+    role: "Snorkeling guide",
+    certification: "Candidate Molchanovs W1",
+    bio: "Started freediving as a tour guide and has been diving for 3 years since. Now works as a DA-NIR staff and part-time guide and fundive videographer, capturing underwater footage and editing it himself. Playfully explore angles for a great shot.",
+    image: "/images/team/sul.jpg",
+  },
+];
 
