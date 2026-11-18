@@ -139,7 +139,7 @@ export const services: ServiceSummary[] = [
     priceLabel: "₱2,500",
     ctaLabel: "View Intro",
     href: "/services/intro-to-freediving",
-    image: "/gallery/intro-4.jpeg",
+    image: "/image/intro/intro-4.jpeg",
     imageAlt: "Intro to freediving session in Siquijor",
     gallery: [
       "/images/intro/1.JPG",
