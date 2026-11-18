@@ -340,7 +340,11 @@ export const introDetails: IntroDetails = {
   gallery: [
     "/images/intro/1.JPG",
     "/images/intro/2.jpg",
+    "/images/intro/2.png",
     "/images/intro/3.jpeg",
+    "/images/intro/intro-3.jpeg",
+    "/images/intro/intro-4.jpg",
+    "/images/intro/intro-5.jpg",
   ],
 };
 
