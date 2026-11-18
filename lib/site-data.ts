@@ -204,7 +204,7 @@ export const services: ServiceSummary[] = [
     priceLabel: "Wave 1 - 3",
     ctaLabel: "View Courses",
     href: "/services/courses",
-    image: "/gallery/intro-1.jpg",
+    image: "/gallery/4.jpg",
     imageAlt: "Freediving course session in Siquijor",
     gallery: [],
   },
