@@ -24,7 +24,8 @@ export type CourseCard = {
   duration: string;
   price: string;
   summary: string;
-  requirements: string[];
+  prerequisites: string[];
+  course requirements: string[];
   highlights: string[];
   note?: string;
   gallery: string[];
@@ -216,10 +217,17 @@ export const courseCards: CourseCard[] = [
     price: "Contact for current rate",
     summary:
       "Entry-level certification focused on safety, equalization, open-water technique, and a stable foundation.",
-    requirements: [
+    prerequisites: [
       "Comfortable in the water",
       "Able to swim confidently",
       "Suitable for beginners and early-stage divers",
+    ],
+    course requirements: [
+      "STA 1'30",
+      "DYNB 30m",
+      "CWTB & FIM 12 - 20m",
+      "CWTB Buddying 6 - 10m",
+      "CWTB Rescue 6 - 10m",
     ],
     highlights: [
       "Breathing and relaxation basics",
@@ -239,10 +247,19 @@ export const courseCards: CourseCard[] = [
     price: "Contact for current rate",
     summary:
       "Intermediate freediving course for divers ready to refine technique, improve efficiency, and build deeper confidence.",
-    requirements: [
+    prerequisites: [
       "Wave 1 or equivalent certification",
       "Comfort with previous depth training",
       "Good equalization control",
+    ],
+    course requirements: [
+      "STA 2'30",
+      "DYNB 50m",
+      "DNF 35m",
+      "CWTB & FIM 24 - 30m",
+      "CNF 15m",
+      "CWTB Buddying 10 - 15m",
+      "CWTB Rescue 10 - 15m",
     ],
     highlights: [
       "Technique refinement",
@@ -263,10 +280,19 @@ export const courseCards: CourseCard[] = [
     price: "Contact for current rate",
     summary:
       "Advanced/Master freediving certification course covering advanced equalization, open-water techniques, and a resilient mental foundation.",
-    requirements: [
+    prerequisites: [
       "Wave 2 or equivalent certification",
       "Comfort with previous depth training",
       "Good equalization control",
+    ],
+    course requirements: [
+      "STA 3'30",
+      "DYNB 75m",
+      "DNF 50m",
+      "CWTB & FIM 34 - 40m",
+      "CNF 25 - 30m",
+      "CWTB Buddying 20m",
+      "Rescue 20m + Surface Tow 20m",
     ],
     highlights: [
       "Transitioning to deep Frenzel and mouthfill equalization, plus reverse packing",
