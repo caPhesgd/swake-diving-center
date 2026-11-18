@@ -229,7 +229,9 @@ export const courseCards: CourseCard[] = [
     ],
     note:
       "Exact structure depends on conditions, student pace, and certification standards.",
-    gallery: [],
+    gallery: [
+      "/images/courses/1.jpg",
+    ],
   },
   {
     title: "Molchanovs Wave 2",
@@ -251,7 +253,9 @@ export const courseCards: CourseCard[] = [
     ],
     note:
       "Best suited to divers who already have a solid foundation and want guided progression.",
-    gallery: [],
+    gallery: [
+       "/images/courses/2.jpg", 
+    ],
   },
   {
     title: "Molchanovs Wave 3",
@@ -271,7 +275,9 @@ export const courseCards: CourseCard[] = [
     ],
     note:
       "Best suited to divers who are eager to master recreational freediving training.",
-    gallery: [],
+    gallery: [
+      "/images/courses/3.jpg",
+    ],
   },
 ];
 
