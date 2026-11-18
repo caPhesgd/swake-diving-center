@@ -144,7 +144,6 @@ export const services: ServiceSummary[] = [
     gallery: [
       "/images/intro/1.JPG",
       "/images/intro/2.jpg",
-      "/images/intro/2.png",
       "/images/intro/3.jpeg",
       "/images/intro/intro-3.jpeg",
       "/images/intro/intro-4.jpg",
@@ -340,7 +339,6 @@ export const introDetails: IntroDetails = {
   gallery: [
     "/images/intro/1.JPG",
     "/images/intro/2.jpg",
-    "/images/intro/2.png",
     "/images/intro/3.jpeg",
     "/images/intro/intro-3.jpeg",
     "/images/intro/intro-4.jpg",
