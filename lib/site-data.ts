@@ -376,9 +376,9 @@ export const fundiveDetails: FundiveDetails = {
   gallery: [
     "/images/fundive/1.JPG",
     "/images/fundive/2.jpg",
-    "/images/fundive/2.PNG",
+    "/images/fundive/2.png",
     "/images/fundive/3.jpg",
-    "/images/fundive/3.PNG",
+    "/images/fundive/3.png",
     "/images/fundive/4.jpg",
     "/images/fundive/5.jpg",
     "/images/fundive/6.jpg",
