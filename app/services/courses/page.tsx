@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { CtaStrip } from "@/components/cta-strip";
 import { DetailList } from "@/components/detail-list";
@@ -36,22 +37,31 @@ export default function CoursesPage() {
               <h2 className="text-3xl font-bold uppercase tracking-[0.24em] text-[#c84f3a]">
                 {course.title}
               </h2>
+
               <p className="mt-sm text-sm font-semibold text-white">
                 {course.duration}
               </p>
+
               <p className="mt-3 text-sm leading-6 text-slate-300">
                 {course.summary}
               </p>
+
               <p className="mt-4 text-sm font-semibold text-cyan-300">
                 {course.price}
               </p>
 
               <div className="mt-6">
-                <DetailList title="Requirements" items={course.requirements} />
+                <DetailList
+                  title="Requirements"
+                  items={course.courseRequirements}
+                />
               </div>
 
               <div className="mt-6">
-                <DetailList title="Highlights" items={course.highlights} />
+                <DetailList
+                  title="Highlights"
+                  items={course.highlights}
+                />
               </div>
 
               {course.note && (
