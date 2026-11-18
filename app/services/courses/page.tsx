@@ -52,7 +52,14 @@ export default function CoursesPage() {
 
               <div className="mt-6">
                 <DetailList
-                  title="Requirements"
+                  title="Prerequisites"
+                  items={course.prerequisites}
+                />
+              </div>
+              
+              <div className="mt-6">
+                <DetailList
+                  title="Course Requirements"
                   items={course.courseRequirements}
                 />
               </div>
